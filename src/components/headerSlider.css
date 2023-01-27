@@ -1,0 +1,11 @@
+.headerContainer{
+    position: relative;
+}
+
+.headerPromo{
+    position: absolute;
+    top:15rem;
+    left:15rem;
+    z-index: 1;
+ 
+}

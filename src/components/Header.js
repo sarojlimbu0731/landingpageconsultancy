@@ -32,7 +32,6 @@ export const Header = () => {
     <span className="flex-fill align-items-center text-light">SCHOLARSHIPS</span>
     <span className="flex-fill align-items-center text-light">STUDENT SUPPORT <AiOutlinePlus/></span>
     <span className="flex-fill align-items-center text-light">CONTACT US <AiOutlinePlus/></span>
-
     </div>
   </div>;
 };
