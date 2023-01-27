@@ -1,0 +1,33 @@
+.counsel {
+  background: rgba(128, 128, 128, 0.075);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.274);
+  height: 15rem;
+}
+
+.careerContainer1 {
+  background-image: url("../assets/career.webp");
+  opacity: 0.7;
+  background-size: cover;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.careerContainer1 > h4 {
+  color: white;
+}
+
+.careerContainer2 {
+  background-image: url("../assets/visa.png");
+  opacity: 0.7;
+  background-size: cover;
+  width: 10rem;
+  height: 10rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.careerContainer2 > h4 {
+  color: black;
+}

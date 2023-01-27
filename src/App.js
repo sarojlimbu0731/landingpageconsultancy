@@ -5,6 +5,7 @@ import {HeaderSlider} from './components/HeaderSlider';
 import CollegeList from './components/CollegeList';
 import CountryList from './components/CountryList';
 import TestPrepList from './components/TestPrepList';
+import CareerAndSubscription from './components/CareerAndSubscription';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <CollegeList/>
         <CountryList/>
         <TestPrepList/>
+        <CareerAndSubscription/>
     </div>
   );
 }

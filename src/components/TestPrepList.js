@@ -38,7 +38,7 @@ function TestPrepList() {
   const [activeTab, setActiveTab] = useState(0);
 
   return (
-    <div className="tabBody  d-flex flex-row">
+    <div className="tabBody d-flex flex-row">
       <div className="d-flex flex-column p-4">
         <h4 className="bg-secondary-subtle p-2">
           {tabs[activeTab].contentHead}
