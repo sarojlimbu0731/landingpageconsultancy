@@ -6,7 +6,7 @@ import wsu from "../assets/westernsu.jpeg";
 function CollegeList() {
   const university = [
     {
-      name: "Unvirsity of Toronto",
+      name: "University of Toronto",
       clzimg: toronto,
     },
     {
@@ -23,7 +23,7 @@ function CollegeList() {
             <div className="d-flex flex-columnjustify-content-center align-items-center">
               <div className="shadow p-4">
                 <img
-                    className="rounded-1"
+                  className="rounded-1"
                   height={"300rem"}
                   width={"400rem"}
                   src={college.clzimg}

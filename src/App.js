@@ -1,8 +1,10 @@
 import './App.css';
+
 import { Header } from './components/Header';
 import {HeaderSlider} from './components/HeaderSlider';
 import CollegeList from './components/CollegeList';
 import CountryList from './components/CountryList';
+import TestPrepList from './components/TestPrepList';
 
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
         <HeaderSlider />
         <CollegeList/>
         <CountryList/>
+        <TestPrepList/>
     </div>
   );
 }
