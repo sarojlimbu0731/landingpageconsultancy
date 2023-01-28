@@ -1,9 +1,34 @@
-import React from "react";
+import React, { useRef } from "react";
 
+import emailjs from "@emailjs/browser";
 import img1 from "../assets/cons.png";
 import img2 from "../assets/student.png";
 import "./headerSlider.css";
 export const HeaderSlider = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_3928c96",
+        "template_yz0nx7u",
+        form.current,
+        "7Iimc8nS0sr2zc72q"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    e.target.reset();
+  };
+
   return (
     <div className="headerContainer">
       <div className="headerPromo d-flex flex-column justify-item-center align-items-center">
@@ -13,6 +38,22 @@ export const HeaderSlider = () => {
         <h1 className="col-6 animate__animated animate__bounceInLeft bg-danger p-1 text-light bg-opacity-50 animate__delay-1s">
           Study Abroad
         </h1>
+      </div>
+      <div className="headerEmail">
+        <form
+          style={{ display: "flex", flexDirection: "column" }}
+          ref={form}
+          onSubmit={sendEmail}
+        >
+          <h3 className="text-light">Drop Your Inquiry</h3>
+          <label className="text-light">Name</label>
+          <input required type="text" name="user_name" />
+          <label className="text-light">Email</label>
+          <input required type="email" name="user_email" />
+          <label className="text-light">Message</label>
+          <textarea required name="message" />
+          <button className="btn btn-outline-danger mt-4" type="submit" value="Send"><strong>Send</strong></button>
+        </form>
       </div>
       <div>
         <div
